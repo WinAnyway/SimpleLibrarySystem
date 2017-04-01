@@ -20,6 +20,6 @@ public class StandardLendingProcess implements LendingProcess{
     @Override
     public void lend(Long bookId, String clientName) {
         lendingRepository.put(new Lending(bookId, clientName));
-        bookRepository.get(bookId).makeUnavailable();
+        bookRepository.get(bookId).lend();
     }
 }

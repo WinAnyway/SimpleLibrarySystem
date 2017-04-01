@@ -45,7 +45,7 @@ public class Book {
         return available;
     }
 
-    public void makeUnavailable() {
+    public void lend() {
         this.available = false;
     }
 
